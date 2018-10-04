@@ -65,3 +65,7 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 | Pop `x` and `y` off the stack. Push `y % x` back on.                                                   |         `%`        | Sand (normal)               |
 
 
+## Example Programs
+### Hello World
+	C9*8,a*a1,9*c,:a*b1,ffe,ff2,8*a7,a*b1,a*b4,9*c,a*a,ff3,`
+	>l?#;o~
