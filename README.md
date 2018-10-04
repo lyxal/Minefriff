@@ -69,3 +69,11 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 ### Hello World
 	C9*8,a*a1,9*c,:a*b1,ffe,ff2,8*a7,a*b1,a*b4,9*c,a*a,ff3,`
 	>l?#;o~
+	
+### Fizzbuzz
+	0,`
+	>I1,+:a*a1,=?;`~             o,aC            <  
+	>:f,%?`Ca*c2,:a*b7,7*e,a*c2,:f*7,a*7,oooooooo^
+	>:5,%?`Ca*c2,:a*b7,6*b,oooo                  ^
+	>:3,%?`Ca*c2,:f*7,a*7,oooo                   ^
+	>:o                                          ^ 
