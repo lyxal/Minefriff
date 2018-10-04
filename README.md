@@ -22,5 +22,6 @@ In textual MineFriff, the code box spans an infinite amount of space, both verti
 
 ### Instruction Pointer (IP)
 The _instruction pointer_ is what drives the interpreting of MineFriff programs. It starts in the top left corner of the program (strict and textual) or wherever the player is standing in freeform. It can move left, right, up, down, and in the case of freeform MineFriff, up layers and down layers. In strict MineFriff, when the IP reaches the edge of the code box, the IP "wraps around" to the other side (e.g. if it reaches the far right side, it will go to the far left side and continue). This doesn't in happen in freeform MineFriff, as there isn't any code box to wrap around. This functionality is being worked on for textual MineFriff.
- 
 
+### The Temporary Register
+Rather than having literals pushed directly onto the stack, MineFriff has a _temporary register_ (temp reg) in which literals are constructed. This allows for any value to be created without having to worry about impacting the stack. The temp reg can be treated as either an `int`eger, a `char`acter or a `float`.
