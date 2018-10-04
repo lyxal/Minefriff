@@ -14,7 +14,7 @@ _Textual_ MineFriff is a text based ascii version of the blocky esolang, which i
 ### Code Box
 Like most fungeoidal esolangs, MineFriff has a code box in which the program is placed. In strict MineFriff, this code box is as shown:
 
-![100 * 100 block code grid]()
+![100 * 100 block code grid](https://photos.app.goo.gl/hd4GnaHpf95Gng4w8)
 
 In freeform MineFriff, this code box is essentially non-existant; programs can take any form they want and can be even 3d.
 
