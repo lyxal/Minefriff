@@ -69,7 +69,8 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 ### Hello World
 	C9*8,a*a1,9*c,:a*b1,ffe,ff2,8*a7,a*b1,a*b4,9*c,a*a,ff3,`
 	>l?#;o~
-	
+
+![Hello world program in blocks](https://lh3.googleusercontent.com/0OLHfIK0dkMC0Wma5OhB6bTlxaDrmv1FlluEyqnh2wdCJjQK3fJ5ATUycUuixtIAODqi9Ix7P3bJ0FHE2bSJ0xln_1-fy-Fvz4pzGvxnthpH2XfQgKUdewKpCZGjF_JT0Gbz0yG0ypwYBfQRp08VQNb_JKbJRDGjz9Clpbgnk7WjdrsMnEHJAPeAjmoEtIc9k8qAOBm93xpldcUZxUTmBtpYDvvw0zsP0MKUdYLjoPE4DSDFe1RqqtDRt-H7ftrrUOoikdKVTZ7qnBzMFdjhIN9BdKsNJm9yDW7ZZlYhc9KvTaQWvWq_xZJ4ddr56kfwvkWWuAOGmbxsrC5ZfM0xDlMlkZiydVBLEtO8mJNi7QFb4fTkrMDKxbBqUWuCjKJMouHQp1LIPxaJ7WmRKJ693EfDBGfIuB6IHi6bO6lLx6K8JnykUR4hDSft56erMJnh5sObvy5s3-Gxn2QJ7FyDbk6wmCVqy-ZnL_ZwBsQ5hMdBxuU6Hlbzp8CfPVT6wF3cGFruHeDA3xd6DOvUsjzKEutpcKeNztBY-5YoYv3tomol8X0bEQ8fo21LGKLRUBf2iukj_IFpO0YXdkp6cb-jAI4c_-otIaHXz1Cyxyabe44Je7gppZxpiVTLBpUsWyk=w1264-h790-no)
 ### Fizzbuzz
 	0,`
 	>I1,+:a*a1,=?;`~             o,aC            <  
@@ -77,3 +78,5 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 	>:5,%?`Ca*c2,:a*b7,6*b,oooo                  ^
 	>:3,%?`Ca*c2,:f*7,a*7,oooo                   ^
 	>:o                                          ^ 
+
+![Fizzbuzz program in blocks](https://lh3.googleusercontent.com/9fY3GEMsNFk3bnzmMUUKA0wIxVUsah7l7vnHtszAcLgH7lI6nxrQ5EL9Z51NhViDt-_abKjW4rbZ5ayYw74tDQy2lLG8Ba9n56khZdZOBnkL55Lx7dxytT1C3WpR8yOR9wzIA3bg4OcclQDFdJ1HOQXM89qZeJb65HQpbn5ifWejxhinyCIFaO3xG_Ywnh4Ux0_U8xbSlSiU1ZsseN1xNfoDRnrCGEsKbeKZcd5Uvs37Mk9t7QhuL1ky-gIWdb5tRZZXJJ57-P0XaXH6kj64sgS8ev0cY6Uo3N9m1Dn_TZUhDOgL__DBCIsN5rEqCTXlrvXSEK6eQ7B-P6jFKp_Wc0uUqdw-tZAOpBpMkSDZiGtSXyQ289wwVnNVTsQumohPRwPm596R94-EMCigjN-bjP3nk_NjiRB6eRw8wkmw3OhgJVHlKgp_H0ssa0uV2Zy6R0y4CbeueEqNMK0DDiHXlNDb2_OIWW2lip0QtxKkWHn1ahLZq16-SkJo27oagPIh_lqubt-V3wLfKnl-C8NJrV4tt0ZxioxdxENCcf4uo03PWzIZiC5ezHH3VXbrApO8HdD6OAs31PAie7eyMUoK73mnYldz_WqooOHAYjVBbslfSIktq3GVJagOqtXAr8A=w1264-h790-no)
