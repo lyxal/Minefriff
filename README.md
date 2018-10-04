@@ -1,2 +1,2 @@
-# Minefriff
-A minecraft esolang
+# Minefriff - An Esolang for Minecraft
+[TODO -- Document this]
