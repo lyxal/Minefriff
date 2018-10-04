@@ -3,8 +3,6 @@
 
 As aforementioned, MineFriff allows for free-form code to be written in any size cube (meaning that 3D code is allowed).
 
-## Forms
-
 **MineFriff** comes in three flavours: Strict, Freeform and Textual. _Strict_ MineFriff is contained in a 100 by 100 block grid, and can be exported to a `.mf` file. However, strict MineFriff is only avaliable in the offical MineFriff interpreter world. _Freeform_ MineFriff is avaliable in any world, but is unexportable to an actual file -- code is run using.
 ```
 /py MineFriff
@@ -21,4 +19,8 @@ Like most fungeoidal esolangs, MineFriff has a code box in which the program is 
 In freeform MineFriff, this code box is essentially non-existant; programs can take any form they want and can be even 3d.
 
 In textual MineFriff, the code box spans an infinite amount of space, both vertically and horizontally.
+
+### Instruction Pointer (IP)
+The _instruction pointer_ is what drives the interpreting of MineFriff programs. It starts in the top left corner of the program (strict and textual) or wherever the player is standing in freeform. It can move left, right, up, down, and in the case of freeform MineFriff, up layers and down layers. In strict MineFriff, when the IP reaches the edge of the code box, the IP "wraps around" to the other side (e.g. if it reaches the far right side, it will go to the far left side and continue). This doesn't in happen in freeform MineFriff, as there isn't any code box to wrap around. This functionality is being worked on for textual MineFriff.
+ 
 
