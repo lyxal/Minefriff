@@ -56,7 +56,7 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 | Pop `x` and `y` off the stack. Push `y - x` back on.                                                   |         `-`        | Granite (raw)               |
 | Change the direction of the IP to a random direction.                                                  |         `x`        | Dispenser                   |
 | Go back to the start of the current line in the same direction.                                        |         `~`        | Hay Block                   |
-| Go to the start of the next line.                                                                      |        `\``        | End Bricks                  |
+| Go to the start of the next line.                                                                      |         `\``        | End Bricks                  |
 | Treat the temp reg as an integer.                                                                      |         `I`        | Packed Ice                  |
 | Treat the temp reg as a character.                                                                     |         `C`        | Birch Wood                  |
 | Treat the temp reg as a float.                                                                         |         `F`        | Furnace                     |
@@ -80,3 +80,7 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 	>:o                                          ^ 
 
 ![Fizzbuzz program in blocks](https://lh3.googleusercontent.com/9fY3GEMsNFk3bnzmMUUKA0wIxVUsah7l7vnHtszAcLgH7lI6nxrQ5EL9Z51NhViDt-_abKjW4rbZ5ayYw74tDQy2lLG8Ba9n56khZdZOBnkL55Lx7dxytT1C3WpR8yOR9wzIA3bg4OcclQDFdJ1HOQXM89qZeJb65HQpbn5ifWejxhinyCIFaO3xG_Ywnh4Ux0_U8xbSlSiU1ZsseN1xNfoDRnrCGEsKbeKZcd5Uvs37Mk9t7QhuL1ky-gIWdb5tRZZXJJ57-P0XaXH6kj64sgS8ev0cY6Uo3N9m1Dn_TZUhDOgL__DBCIsN5rEqCTXlrvXSEK6eQ7B-P6jFKp_Wc0uUqdw-tZAOpBpMkSDZiGtSXyQ289wwVnNVTsQumohPRwPm596R94-EMCigjN-bjP3nk_NjiRB6eRw8wkmw3OhgJVHlKgp_H0ssa0uV2Zy6R0y4CbeueEqNMK0DDiHXlNDb2_OIWW2lip0QtxKkWHn1ahLZq16-SkJo27oagPIh_lqubt-V3wLfKnl-C8NJrV4tt0ZxioxdxENCcf4uo03PWzIZiC5ezHH3VXbrApO8HdD6OAs31PAie7eyMUoK73mnYldz_WqooOHAYjVBbslfSIktq3GVJagOqtXAr8A=w1264-h790-no)
+
+--------------
+# Installation Instructions for Strict and Freeform MineFriff
+You will need the [Raspberry Jam Mod](https://github.com/arpruss/raspberryjammod). The tutorial [here](https://www.instructables.com/id/Python-coding-for-Minecraft/) shows how to install it. Once you have the mod fully installed, drag `MineFriff.py` into the `mcpipy` folder.
