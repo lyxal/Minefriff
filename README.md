@@ -84,3 +84,7 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 --------------
 # Installation Instructions for Strict and Freeform MineFriff
 You will need the [Raspberry Jam Mod](https://github.com/arpruss/raspberryjammod). The tutorial [here](https://www.instructables.com/id/Python-coding-for-Minecraft/) shows how to install it. Once you have the mod fully installed, drag `MineFriff.py` into the `mcpipy` folder.
+
+# To be Added
+- The ability to have input
+- More commands
