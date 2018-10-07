@@ -81,6 +81,21 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 
 ![Fizzbuzz program in blocks](https://lh3.googleusercontent.com/9fY3GEMsNFk3bnzmMUUKA0wIxVUsah7l7vnHtszAcLgH7lI6nxrQ5EL9Z51NhViDt-_abKjW4rbZ5ayYw74tDQy2lLG8Ba9n56khZdZOBnkL55Lx7dxytT1C3WpR8yOR9wzIA3bg4OcclQDFdJ1HOQXM89qZeJb65HQpbn5ifWejxhinyCIFaO3xG_Ywnh4Ux0_U8xbSlSiU1ZsseN1xNfoDRnrCGEsKbeKZcd5Uvs37Mk9t7QhuL1ky-gIWdb5tRZZXJJ57-P0XaXH6kj64sgS8ev0cY6Uo3N9m1Dn_TZUhDOgL__DBCIsN5rEqCTXlrvXSEK6eQ7B-P6jFKp_Wc0uUqdw-tZAOpBpMkSDZiGtSXyQ289wwVnNVTsQumohPRwPm596R94-EMCigjN-bjP3nk_NjiRB6eRw8wkmw3OhgJVHlKgp_H0ssa0uV2Zy6R0y4CbeueEqNMK0DDiHXlNDb2_OIWW2lip0QtxKkWHn1ahLZq16-SkJo27oagPIh_lqubt-V3wLfKnl-C8NJrV4tt0ZxioxdxENCcf4uo03PWzIZiC5ezHH3VXbrApO8HdD6OAs31PAie7eyMUoK73mnYldz_WqooOHAYjVBbslfSIktq3GVJagOqtXAr8A=w1264-h790-no)
 
+### 99 bottles of bear
+Ia*a,`
+	>I1,-:0,=?;`                                                                                                                                   ~
+	>Cff2,ffe,c*9,c*9,a*97,a*b9,ff2,a*a1,d*8,a*b6,ff2,a*b,a*b1,ff2,a*b4,a*a1,a*a1,e*7,ff2,a*a2,a*b1,ff2,a*b5,a*a1,c*9,a*b6,a*b6,a*b1,e*7,ff2,`
+	>r:or`
+	>lI1,=?`o~
+	>Ca,a*46,a*b4,a*a1,a*a1,e*7,ff2,a*a2,a*b1,ff2,a*b5,a*a1,c*9,a*b6,a*b6,a*b1,e*7,ff2,`
+	>r:or`
+	>lI1,=?`o~
+	>Cff2,ffe,a*a,a*b,d*9,a*b1,a*b4,a*97,ff2,a*b6,f*7,ff2,a*b5,a*b5,a*97,e*8,ff2,ffe,a*b,a*b9,a*b1,a*a,ff2,a*a1,a*b,a*b1,ff2,a*a1,a*a7,a*97,c*7,`
+	>lI1,=?`o~
+	>Ca*46,c*9,c*9,a*97,a*b9,ff2,a*a1,d*8,a*b6,ff2,a*b,a*b1,ff2,a*b4,a*a1,a*a1,e*7,ff2,a*a2,a*b1,ff2,a*b5,a*a1,c*9,a*b6,a*b6,a*b1,e*7,ff2,`
+	>r:I1,-or`
+	>l1,=?`o~                                                                                                                                  
+	>Ca,a,oo                                                                                                                                       ^
 --------------
 # Installation Instructions for Strict and Freeform MineFriff
 You will need the [Raspberry Jam Mod](https://github.com/arpruss/raspberryjammod). The tutorial [here](https://www.instructables.com/id/Python-coding-for-Minecraft/) shows how to install it. Once you have the mod fully installed, drag `MineFriff.py` into the `mcpipy` folder.
