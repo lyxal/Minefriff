@@ -33,10 +33,23 @@ def gridify(code):
     return grid
 
 def next_cmd(ip):
-    return (ip[0] + direction[0],
-            ip[1] + direction[1],
+    factor_x = 0
+    factor_y = 0
+    while is_empty(ip[0] + direction[0] + factor_x,
+                   ip[1] + direction[1] + factor_y):
+        factor_x += direction[0]
+        factor_y += direction[1]
+        
+    return (ip[0] + direction[0] + factor_x,
+            ip[1] + direction[1] + factor_y,
             ip[2] + direction[2])
 
+def is_empty(x, y):
+    try:
+        c = g[y][x]
+        return False
+    except IndexError:
+        return True
 def run(grid):
     global stack, temp_reg, direction, ip, push_mode, next_op
     
@@ -212,7 +225,9 @@ def run(grid):
         cmd = grid[ip[1]][ip[0]]
 
 if __name__ == '__main__':
-
+    pre_stack = input("Enter values to pre-populate stack: ")
+    for letter in pre_stack:
+        stack.append(letter)
     code = open(getLoadPath("", ".mf")).read()
     g = gridify(code)
     run(g)
