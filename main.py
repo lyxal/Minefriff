@@ -12,6 +12,8 @@ next_op = "+"
 in_peak = False
 peak_direction = ConstLib.PEAK_DIR.NONE
 spot = (0, 0, 0)
+in_comment = False
+master = Tk()
 
 def getLoadPath(directory, extension):
     if int(sys.version[0]) < 3:
@@ -20,7 +22,7 @@ def getLoadPath(directory, extension):
     else:
         from tkinter.filedialog import askopenfilename
         from tkinter import Tk
-    master = Tk()
+    
     master.attributes("-topmost", True)
     path = askopenfilename(initialdir=directory,filetypes=['MineFriff {*.'+extension+'}'],title="Open")
     master.destroy()
@@ -56,12 +58,18 @@ def is_empty(x, y):
         return True
 def run(grid):
     global stack, temp_reg, direction, ip, push_mode, next_op
-    global peak_direction, original_direction, spot
+    global peak_direction, original_direction, spot, in_comment
     
     cmd = grid[ip[1]][ip[0]]
 
     while cmd != ConstLib.END_PROG:
-        if cmd == ConstLib.COMMAND_LEFT:
+        if in_comment and cmd != ConstLib.COMMENT_END:
+            continue
+
+        if cmd == ConstLib.COMMENT_END:
+            in_comment = False
+            
+        elif cmd == ConstLib.COMMAND_LEFT:
             direction = ConstLib.LEFT
 
         elif cmd == ConstLib.COMMAND_RIGHT:
@@ -249,16 +257,22 @@ def run(grid):
             else:
                 raise Exception("Not enough values for comparison for >")
 
-        elif cmd == ConstLib.PEAK_UP:
-            if is_empty(ip[0], ip[1] - 1, ip[2]):
-                pass
 
-            else:
-                cmd = grid[ip[1] - 1][ip[0]]
-                if not in_peak:
-                    in_peak = True               
-                    original_direction = direction
-                    spot = (ip[0], ip[1])
+        elif cmd == ConstLib.L_SHIFT:
+            val = stack[0]
+            del stack[0]
+            stack.append(val)
+
+        elif cmd == ConstLib.R_SHIFT:
+            val = stack[-1]
+            del stack[-1]
+            stack.insert(0, val)
+
+        elif cmd == ConstLib.SWAP_TOP:
+            stack[-1], stack[-2] = stack[-2], stack[-1]
+
+        elif cmd == ConstLib.COMMENT_START:
+            in_comment = True
 
         
         ip = next_cmd(ip)
