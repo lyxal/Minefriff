@@ -5,9 +5,13 @@ import sys
 stack = []
 temp_reg = 0
 direction = ConstLib.RIGHT
+original_direction = ConstLib.RIGHT
 ip = (0, 0, 0)
 push_mode = int
 next_op = "+"
+in_peak = False
+peak_direction = ConstLib.PEAK_DIR.NONE
+spot = (0, 0, 0)
 
 def getLoadPath(directory, extension):
     if int(sys.version[0]) < 3:
@@ -52,6 +56,7 @@ def is_empty(x, y):
         return True
 def run(grid):
     global stack, temp_reg, direction, ip, push_mode, next_op
+    global peak_direction, original_direction, spot
     
     cmd = grid[ip[1]][ip[0]]
 
@@ -96,6 +101,7 @@ def run(grid):
                 stack.append(char)
 
         elif cmd == ConstLib.POP:
+            temp_reg = stack[-1]
             del stack[-1]
 
         elif cmd == ConstLib.REVERSE:
@@ -219,7 +225,42 @@ def run(grid):
                     stack.append(0)
             else:
                 raise Exception("Not enough values for comparison for =")
-            
+
+
+        elif cmd == ConstLib.LESS_THAN:
+            if len(stack) >= 2:
+                left, right = stack[-1], stack[-2]
+                del stack[-1]; del stack[-1]
+                if left < right:
+                    stack.append(1)
+                else:
+                    stack.append(0)
+            else:
+                raise Exception("Not enough values for comparison for <")
+
+        elif cmd == ConstLib.GREATER_THAN:
+            if len(stack) >= 2:
+                left, right = stack[-1], stack[-2]
+                del stack[-1]; del stack[-1]
+                if left > right:
+                    stack.append(1)
+                else:
+                    stack.append(0)
+            else:
+                raise Exception("Not enough values for comparison for >")
+
+        elif cmd == ConstLib.PEAK_UP:
+            if is_empty(ip[0], ip[1] - 1, ip[2]):
+                pass
+
+            else:
+                cmd = grid[ip[1] - 1][ip[0]]
+                if not in_peak:
+                    in_peak = True               
+                    original_direction = direction
+                    spot = (ip[0], ip[1])
+
+        
         ip = next_cmd(ip)
         #print(stack, cmd)
         cmd = grid[ip[1]][ip[0]]
