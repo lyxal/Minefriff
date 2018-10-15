@@ -1,6 +1,6 @@
 import random
 import ConstLib
-import sys
+import sys, tkinter
 
 stack = []
 temp_reg = 0
@@ -13,7 +13,7 @@ in_peak = False
 peak_direction = ConstLib.PEAK_DIR.NONE
 spot = (0, 0, 0)
 in_comment = False
-master = Tk()
+master = tkinter.Tk()
 
 def getLoadPath(directory, extension):
     if int(sys.version[0]) < 3:
@@ -63,7 +63,10 @@ def run(grid):
     cmd = grid[ip[1]][ip[0]]
 
     while cmd != ConstLib.END_PROG:
-        if in_comment and cmd != ConstLib.COMMENT_END:
+        if in_comment and cmd != ConstLib.COMMENT_END:                        
+            ip = next_cmd(ip)
+            #print(stack, cmd)
+            cmd = grid[ip[1]][ip[0]]
             continue
 
         if cmd == ConstLib.COMMENT_END:
@@ -274,6 +277,8 @@ def run(grid):
         elif cmd == ConstLib.COMMENT_START:
             in_comment = True
 
+        elif cmd == ConstLib.PEAK_UP:
+            pass
         
         ip = next_cmd(ip)
         #print(stack, cmd)
