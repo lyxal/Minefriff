@@ -56,13 +56,14 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 | Pop `x` and `y` off the stack. Push `y - x` back on.                                                   |         `-`        | Granite (raw)               |
 | Change the direction of the IP to a random direction.                                                  |         `x`        | Dispenser                   |
 | Go back to the start of the current line in the same direction.                                        |         `~`        | Hay Block                   |
-| Go to the start of the next line.                                                                      |         `\``        | End Bricks                  |
+| Go to the start of the next line.                                                                      |         Backtick        | End Bricks                  |
 | Treat the temp reg as an integer.                                                                      |         `I`        | Packed Ice                  |
 | Treat the temp reg as a character.                                                                     |         `C`        | Birch Wood                  |
 | Treat the temp reg as a float.                                                                         |         `F`        | Furnace                     |
 | Right shift the stack by 1.                                                                            |         `]`        | Dirt Block                  |
 | Left shift the stack by 1.                                                                             |         `[`        | Cobblestone                 |
 | Pop `x` and `y` off the stack. Push `y % x` back on.                                                   |         `%`        | Sand (normal)               |
+| Start/end a comment                                                                                    |         `{...}`     | N/A                         |
 
 
 ## Example Programs
