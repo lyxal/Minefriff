@@ -15,6 +15,7 @@ LITERAL = "0123456789abcdef"
 REVERSE = "r"
 PUSH = ","
 POP = "."
+DELETE = "!"
 LENGTH = "l"
 EQUALS = "="
 DUPLICATE = ":"
@@ -39,4 +40,16 @@ L_SHIFT = "["
 INPUT = "i"
 MODULUS = "%"
 JUMP = '"'
+COMMENT_START = "{"
+COMMENT_END = "}"
+PEAK_UP = "U"
+PEAK_DOWN = "D"
+PEAK_LEFT = "L"
+PEAK_RIGHT = "R"
 
+class PEAK_DIR:
+    UP = (0, -1, 0)
+    DOWN = (0, 1, 0)
+    LEFT = (-1, 0, 0)
+    RIGHT = (1, 0, 0)
+    NONE = (0, 0, 0)

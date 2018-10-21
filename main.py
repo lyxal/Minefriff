@@ -102,6 +102,9 @@ def run(grid):
             stack.append(push_mode(temp_reg))
             temp_reg = 0
 
+        elif cmd == ConstLib.DELETE:
+            del stack[-1]
+
         elif cmd == ConstLib.PRINT:
             print(stack[-1], end="")
             del stack[-1]
@@ -281,7 +284,7 @@ def run(grid):
             pass
         
         ip = next_cmd(ip)
-        #print(stack, cmd)
+        #print(stack, cmd) #uncomment to enable debug mode
         cmd = grid[ip[1]][ip[0]]
 
 if __name__ == '__main__':
