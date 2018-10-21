@@ -64,6 +64,7 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 | Left shift the stack by 1.                                                                             |         `[`        | Cobblestone                 |
 | Pop `x` and `y` off the stack. Push `y % x` back on.                                                   |         `%`        | Sand (normal)               |
 | Start/end a comment                                                                                    |         `{...}`     | N/A                         |
+| Delete the last item on the stack (pop it, without saving it)                                                               |         `!`     | N/A                         |
 
 
 ## Example Programs
