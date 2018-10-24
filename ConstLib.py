@@ -10,7 +10,7 @@ COMMAND_RIGHT = ">"
 COMMAND_UP = "^"
 COMMAND_DOWN = "v"
 
-PRINT = "o"
+OUTPUT = "o"
 LITERAL = "0123456789abcdef"
 REVERSE = "r"
 PUSH = ","
@@ -46,6 +46,7 @@ PEAK_UP = "U"
 PEAK_DOWN = "D"
 PEAK_LEFT = "L"
 PEAK_RIGHT = "R"
+PRINT = "p"
 
 class PEAK_DIR:
     UP = (0, -1, 0)

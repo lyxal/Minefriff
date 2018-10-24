@@ -105,14 +105,14 @@ def run(grid):
         elif cmd == ConstLib.DELETE:
             del stack[-1]
 
-        elif cmd == ConstLib.PRINT:
+        elif cmd == ConstLib.OUTPUT:
             print(stack[-1], end="")
             del stack[-1]
 
         elif cmd == ConstLib.INPUT:
             txt = input()
             for char in txt:
-                stack.append(char)
+                stack.append(push_mode(char))
 
         elif cmd == ConstLib.POP:
             temp_reg = stack[-1]
@@ -282,6 +282,19 @@ def run(grid):
 
         elif cmd == ConstLib.PEAK_UP:
             pass
+
+        elif cmd == ConstLib.PRINT:
+            #Not the single char output, but the smart function
+            if len(stack) == 0 or type(stack[-1]) == str or stack[-1] == "*":
+                print("".join(stack))
+                stack.clear()
+                
+            else:
+                x = stack.pop()
+                print("".join(stack[:x]))
+                
+                
+            
         
         ip = next_cmd(ip)
         #print(stack, cmd) #uncomment to enable debug mode
