@@ -1,6 +1,6 @@
 import random
 import ConstLib
-import sys, tkinter
+import sys
 
 stack = []
 temp_reg = 0
@@ -13,20 +13,8 @@ in_peak = False
 peak_direction = ConstLib.PEAK_DIR.NONE
 spot = (0, 0, 0)
 in_comment = False
-master = tkinter.Tk()
 
-def getLoadPath(directory, extension):
-    if int(sys.version[0]) < 3:
-        from tkFileDialog import askopenfilename
-        from Tkinter import Tk
-    else:
-        from tkinter.filedialog import askopenfilename
-        from tkinter import Tk
-    
-    master.attributes("-topmost", True)
-    path = askopenfilename(initialdir=directory,filetypes=['MineFriff {*.'+extension+'}'],title="Open")
-    master.destroy()
-    return path
+
 
 def gridify(code):
     grid = []
@@ -301,9 +289,20 @@ def run(grid):
         cmd = grid[ip[1]][ip[0]]
 
 if __name__ == '__main__':
-    pre_stack = input("Enter values to pre-populate stack: ")
-    for letter in pre_stack:
-        stack.append(letter)
-    code = open(getLoadPath("", ".mf")).read()
+    if len(sys.argv) > 1:
+        import argparse
+        parser = argparse.ArgumentParser()
+        parser.add_argument("file", help="The location of the Minefriff file to open")
+
+        args = parser.parse_args()
+        file_location = args.file
+
+
+    else:
+        file_location = input("Enter the file location of the Minefriff program: ")
+
+    code = open(file_location, encoding="utf-8").read().strip("\n")
+
+
     g = gridify(code)
     run(g)
