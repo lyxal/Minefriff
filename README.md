@@ -69,7 +69,7 @@ The stack in MineFriff is like the stack in most other fungeoids -- it can have 
 
 ## Example Programs
 ### Hello World
-	C9*8,a*a1,9*c,:a*b1,ffe,ff2,8*a7,a*b1,a*b4,9*c,a*a,ff3,`
+	Cff3,a*a,9*c,a*b4,a*b1,8*a7,ff2,ffe,a*b1,9*c,:a*a1,9*8,`
 	>l?#;o~
 
 ![Hello world program in blocks](https://lh3.googleusercontent.com/0OLHfIK0dkMC0Wma5OhB6bTlxaDrmv1FlluEyqnh2wdCJjQK3fJ5ATUycUuixtIAODqi9Ix7P3bJ0FHE2bSJ0xln_1-fy-Fvz4pzGvxnthpH2XfQgKUdewKpCZGjF_JT0Gbz0yG0ypwYBfQRp08VQNb_JKbJRDGjz9Clpbgnk7WjdrsMnEHJAPeAjmoEtIc9k8qAOBm93xpldcUZxUTmBtpYDvvw0zsP0MKUdYLjoPE4DSDFe1RqqtDRt-H7ftrrUOoikdKVTZ7qnBzMFdjhIN9BdKsNJm9yDW7ZZlYhc9KvTaQWvWq_xZJ4ddr56kfwvkWWuAOGmbxsrC5ZfM0xDlMlkZiydVBLEtO8mJNi7QFb4fTkrMDKxbBqUWuCjKJMouHQp1LIPxaJ7WmRKJ693EfDBGfIuB6IHi6bO6lLx6K8JnykUR4hDSft56erMJnh5sObvy5s3-Gxn2QJ7FyDbk6wmCVqy-ZnL_ZwBsQ5hMdBxuU6Hlbzp8CfPVT6wF3cGFruHeDA3xd6DOvUsjzKEutpcKeNztBY-5YoYv3tomol8X0bEQ8fo21LGKLRUBf2iukj_IFpO0YXdkp6cb-jAI4c_-otIaHXz1Cyxyabe44Je7gppZxpiVTLBpUsWyk=w1264-h790-no)
